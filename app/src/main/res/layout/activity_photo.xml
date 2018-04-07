@@ -40,14 +40,23 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="Sorry"
                 android:text="@string/bring_from_album" />
         </LinearLayout>
 
         <ImageView
             android:id="@+id/photo"
             android:layout_width="match_parent"
-            android:layout_height="173dp"
+            android:layout_height="308dp"
             app:srcCompat="@color/common_google_signin_btn_text_dark_disabled" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onBack"
+            android:text="Back"
+            android:textColor="#000000" />
 
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

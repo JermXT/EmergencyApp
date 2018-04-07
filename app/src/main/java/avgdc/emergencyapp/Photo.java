@@ -3,6 +3,7 @@ package avgdc.emergencyapp;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.provider.MediaStore;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -41,5 +42,14 @@ public class Photo extends AppCompatActivity {
     }
 
     //Bring From Album
+    public void Sorry(View v){
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Sorry").setMessage("I didn't finsih\n -Jae Choi-").setNeutralButton("Close",null).show();
+    }
 
+
+    // Back Privious Activity
+    public void onBack(View v){
+        finish();
+    }
 }
