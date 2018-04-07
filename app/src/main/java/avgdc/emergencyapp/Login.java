@@ -27,7 +27,7 @@ public class Login extends AppCompatActivity {
             if(numbd.length() == 10){
                 PhoneNumber =numbd.getText().toString();
                 loginState = true;
-                Intent intent = new Intent(this, PinMapsActivity.class);
+                Intent intent = new Intent(this, Photo.class);
                 startActivity(intent);
             }else{
                 AlertDialog.Builder builder = new AlertDialog.Builder(this);

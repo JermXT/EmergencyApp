@@ -38,7 +38,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PinMapsActivity"></activity>
+        <activity android:name=".PinMapsActivity" />
+        <activity android:name=".Photo"></activity>
     </application>
 
 </manifest>

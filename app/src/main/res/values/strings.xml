@@ -5,4 +5,6 @@
     <string name="GO">GO!</string>
     <string name="PN">Phone Number: </string>
     <string name="PHN">PhoneNumber</string>
+    <string name="bring_from_album">Bring From Album</string>
+    <string name="camera">Camera</string>
 </resources>
