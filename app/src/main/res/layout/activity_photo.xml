@@ -47,15 +47,31 @@
         <ImageView
             android:id="@+id/photo"
             android:layout_width="match_parent"
-            android:layout_height="308dp"
+            android:layout_height="145dp"
             app:srcCompat="@color/common_google_signin_btn_text_dark_disabled" />
 
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="193dp"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Problem"
+            android:inputType="textPersonName" />
+
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/Submit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="onBack"
-            android:text="Back"
+            android:text="Submit"
             android:textColor="#000000" />
 
     </LinearLayout>

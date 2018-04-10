@@ -7,7 +7,9 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class Photo extends AppCompatActivity {
 
@@ -19,10 +21,13 @@ public class Photo extends AppCompatActivity {
 
 
     static final int REQUEST_IMAGE_CAPTURE = 1;
+    public static String des;// You can send it to Server
 
+    //Camera Button
     public void onClick(View v){
         dispatchTakePictureIntent();
     }
+
 
     //Camera
     private void dispatchTakePictureIntent() {
@@ -45,6 +50,14 @@ public class Photo extends AppCompatActivity {
     public void Sorry(View v){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Sorry").setMessage("I didn't finsih\n -Jae Choi-").setNeutralButton("Close",null).show();
+    }
+
+    //text
+    public void show_the_texts(){
+        EditText text = (EditText) findViewById(R.id.editText);
+        TextView vt = (TextView) findViewById(R.id.textView2);
+        des = text.getText().toString();
+        vt.setText(des);
     }
 
 
